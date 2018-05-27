@@ -2,7 +2,7 @@ package tennis;
 
 public class Game {
     private final int[] GAME_POINTS = {0, 15, 30, 40};
-    private String[] GAME_STATUS = {"Ongoing", "Finished"};
+    private final String[] GAME_STATUS = {"Ongoing", "Finished"};
 
     private Player player1;
     private Player player2;
