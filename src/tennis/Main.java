@@ -14,9 +14,10 @@ public class Main {
 
         Game rolandGarros = new Game(p1, p2);
 
+        //A player will be chosen randomly to score until the game is finished
         while(rolandGarros.getCurrentStatus().equals("Ongoing")){
-            int luckyPlayer = Math.random() < 0.5 ? 0 : 1;
-            rolandGarros.scorePoint(players.get(luckyPlayer));
+            int luckyPlayer = Math.random() < 0.5 ? 0 : 1; //Choose a random player
+            rolandGarros.scorePoint(players.get(luckyPlayer)); //Score the point
             System.out.println(rolandGarros.toString() + "\n");
         }
     }
